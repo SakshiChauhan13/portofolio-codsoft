@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Codsoft Portfolio</title>
+        <style>
+            body{
+                background: url('https://wallpapercave.com/wp/wp7687490.jpg');
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+                font-family: sans-serif;
+            }
+            html::-webkit-scrollbar-thumb{
+                background: var(#66422D);
+            }
+            html{
+                font-size: 60%;
+                overflow-x: hidden;
+            }
+            html::-webkit-scrollbar{
+                width: 1.6rem;
+            }
+            html::-webkit-scrollbar-track{
+                background: #66422D;
+            }
+            *{
+                font-family: 'nunito', sans-serif;
+                margin:0;
+                text-decoration: none;
+                transition: all .2s linear;
+                text-transform: capitalize;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            *::selection{
+                background: var(#66422D);
+                color: #66422D;
+            }
+            header{
+                flex-flow: column;
+                width: 40rem;
+                height: 100%;
+                z-index: 1000;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: fixed;
+                top:0;
+                background: #9f806e92; 
+                left:0;
+            }
+            
+            header .h1{
+                color: #66422D;
+                font-size: 4rem;
+            }  
+            header .user .name{
+                color: #311c10c6;
+                font-size: x-large;
+            }  
+            header .user .para{
+                color: #451c04dc;
+                font-size: large;
+                
+            }  
+                     
+            nav{
+                display: flex;
+                margin: auto;
+                width: 80%;
+                padding: 15px 0;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav ul li{
+                margin: 15px 25px;
+                display: inline-block;
+                border-radius: 6rem;
+                list-style: none;
+            }
+            nav ul li a{
+                font-weight: bolder;
+                text-decoration: none;
+            }
+            .menu a{
+                padding: 15px 25px;
+                color: #66422D;
+                background-color: #EBD2BC;
+                position: relative;
+                text-decoration: none;
+                font-size: large;
+                
+            }
+            .menu a:hover{
+                background: black;
+                border: 2px white;
+            }
+            .images{
+                height: 80%;
+                position: absolute;
+                width: 40%;
+                bottom: 0;
+                right: 100px;
+            }
+
+            @media (max-width:1100px){
+                html{
+                    font-size: 55%;
+                }
+            }
+            @media (max-width:980px){
+                header{
+                    left: -110%;
+                }
+                header.toggle{      
+                left: 0%;
+                }
+            }
+
+        </style>
+        <script>
+            $(document).ready(function(){
+                $('.menu').click(function(){
+                 $(this).toggleClass('fa-times');
+                 $('header').toggleClass('toggle');
+                });
+                $(window).on('scroll load', function(){
+                    $('.menu').removeClass('fa-times');
+                    $('header').removeClass('toggle');  
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1><center>MY OFFICIAL WEBSITE</h1></center>
+        <header>
+            
+            </div>
+            
+           
+            <nav>
+            <div class="menu">
+                <ul>
+                <li><button><a href="#">Home</a></button></li>
+                <li><button><a href="#">About</a></button></li>
+                <li><button><a href="#">Education</a></button></li>
+                <li><button><a href="#">Portfolio</a></button></li>
+                <li><button><a href="#">Contact</a></button></li>
+                </ul>
+            </div>
+            
+            </nav>
+            <div class="user">
+                <h2 class="name">Kim Taehyung </h2>
+                <p class="para"> Front end developer, Data Scientist and Korean Language Teacher<br><br>
+                Namaste Everyone!! This is my Real and Official Portfolio website. Here I want to show my Eduction Qualification, Details, My korea Learning and My work. I believe in Hard Work + Smart Work. </p>
+                
+            </div>
+            
+        </header>
+       
+    </body>
+</html>
+
